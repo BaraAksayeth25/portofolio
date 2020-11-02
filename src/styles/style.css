@@ -11,6 +11,7 @@ body {
 .wrapper {
   width: 100%;
   height: auto;
+  padding-bottom: 1000px;
 }
 
 .container-head {
@@ -126,4 +127,38 @@ body {
 }
 .button:hover {
   background-color: rgb(192, 13, 103);
+}
+
+.none {
+  display: none;
+}
+.social-media .body {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 10px;
+}
+.account {
+  margin: 10px;
+  font-size: 23px;
+  cursor: pointer;
+}
+.twitter {
+  color: rgb(96, 7, 114);
+}
+.telegram {
+  color: rgb(139, 8, 100);
+}
+.instagram {
+  color: rgb(185, 17, 101);
+}
+.twitter:hover {
+  color: rgb(86, 7, 102);
+}
+.telegram :hover {
+  color: rgb(116, 9, 84);
+}
+.instagram:hover {
+  color: rgb(155, 15, 85);
 }
