@@ -3,7 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./assets/fontawesome/css/all.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+      integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./src/styles/style.css" />
     <title>Hello | Bara Aksayeth</title>
   </head>
@@ -12,14 +21,11 @@
       <div class="filter">
         <div class="container-head">
           <div class="avatar">
-            <img
-              src="./assets/images/starry-night-sky.jpg"
-              alt="Foto Profile"
-            />
+            <img src="./assets/images/profile.jpg" alt="Foto Profile" />
           </div>
           <div class="profile">
             <p class="text-name">
-              Hello I'm <strong class="purple">Bara Aksayeth</strong>
+              Hello I'm <strong class="purple bold">Bara Aksayeth</strong>
             </p>
             <span>Backend Developer</span>
           </div>
@@ -28,20 +34,28 @@
 
       <div class="container-body">
         <div class="main-menu">
-          <span class="menu">About</span>
-          <span class="menu">Gallery</span>
-          <span class="menu">Social Media</span>
-          <span class="menu active">Skill</span>
-          <span class="menu">Coffee</span>
+          <a href="#about">
+            <span class="menu">About</span>
+          </a>
+          <a href="#skill">
+            <span class="menu">Skill</span>
+          </a>
+          <a href="#gallery">
+            <span class="menu">Gallery</span>
+          </a>
+          <a href="#social-media">
+            <span class="menu">Social Media</span>
+          </a>
+          <span class="menu active">Coffee</span>
         </div>
         <div class="container-section">
           <div class="main-section">
-            <div class="section about">
+            <div class="section about" id="about">
               <div class="header">
                 <h1><span class="title">About</span></h1>
               </div>
               <div class="body">
-                <h3 class="purple"><strong>Nice 2 Meet U ;)</strong></h3>
+                <h3 class="purple">Nice 2 Meet U ;)</h3>
                 <p>
                   My name is Muhammad Bara Aksayeth 17y'o, I'm
                   <span class="purple">Student</span> at SMKN 1 Cibinong right
@@ -59,7 +73,7 @@
                 </p>
               </div>
             </div>
-            <div class="section skill">
+            <div class="section skill" id="skill">
               <div class="header">
                 <h1><span class="title">Skill</span></h1>
               </div>
@@ -76,7 +90,7 @@
                     <ul>
                       <li><span class="purple">Html</span></li>
                       <li><span class="purple">Css</span></li>
-                      <li><span class="purple">Js</span></li>
+                      <li><span class="purple">JavaScript</span></li>
                     </ul>
                   </div>
                 </div>
@@ -96,28 +110,50 @@
                 </div>
               </div>
             </div>
-            <div class="section social-media">
+            <div class="section gallery" id="gallery">
+              <div class="header">
+                <h1><span class="title">Gallery</span></h1>
+              </div>
+              <div class="body" style="text-align: center">
+                <h3><span class="purple">404</span> Not Found</h3>
+                <p>For now I don't have a gallery yet</p>
+              </div>
+            </div>
+            <div class="section social-media" id="social-media">
               <div class="header">
                 <h1>
                   <span class="title">Let's Be Internet </span>
-                  <strong class="purple">BFF's</strong>
+                  <span class="purple">BFF's</span>
                 </h1>
               </div>
               <div class="body">
                 <div class="account twitter">
-                  <i class="fab fa-twitter"></i>
+                  <a href="https://twitter.com/YruZrx" target="_blank">
+                    <i class="fab fa-twitter"></i>
+                  </a>
                 </div>
                 <div class="account telegram">
-                  <i class="fab fa-telegram-plane"></i>
+                  <a href="https://t.me/Yruxx" target="_blank">
+                    <i class="fab fa-telegram-plane"></i>
+                  </a>
                 </div>
-                <div class="account instagram">
-                  <i class="fab fa-instagram"></i>
+                <div class="account instagram" target="_blank">
+                  <a href="https://instagram.com/baraaksayeth">
+                    <i class="fab fa-instagram"></i>
+                  </a>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
+      <div class="ontop">
+        <div class="circle">
+          <i class="fas fa-chevron-up"></i>
+        </div>
+      </div>
     </div>
+
+    <script src="./src/js/index.js"></script>
   </body>
 </html>
